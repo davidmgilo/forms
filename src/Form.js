@@ -43,6 +43,28 @@ export default class Form {
         return data
     }
 
+    /**
+     * Check if a field exists on form
+     *
+     * @param field
+     * @returns {boolean}
+     */
+    has (field) {
+        return this.hasOwnProperty(field)
+    }
+
+    /**
+     * Set the field value.
+     *
+     * @param field
+     * @param value
+     */
+    set (field, value) {
+        if (this.has(field)) {
+            this[field] = value
+        }
+    }
+
     submit(requestType,url){
         this.submitting = true
         return new Promise((resolve,reject) =>{

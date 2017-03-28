@@ -1,0 +1,14 @@
+{
+  "name": "davidmgilo-forms",
+  "version": "0.1.1",
+  "description": "",
+  "main": "src/Form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David <davidmgilo@gmail.com> (https://github.com/davidmgilo)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
